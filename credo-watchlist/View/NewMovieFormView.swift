@@ -18,10 +18,8 @@ struct NewMovieFormView: View {
     //MARK: - FUNCTIONS
     
     private func addMovie() {
-        guard !title.isEmpty else { return }
         let newMovie = Movie(title: title, genre: selectedGenre)
         modelContext.insert(newMovie)
-        
         title = ""
         selectedGenre = .action
     }
