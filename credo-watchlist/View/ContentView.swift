@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         List {
             
-        }
+        } //: List
         .overlay {
             if movies.isEmpty {
                 EmptyListView()
